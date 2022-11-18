@@ -986,7 +986,7 @@ for (const box of anchors) {
   box.addEventListener("click", function handleClick(event) {
     console.log("box clicked", event.target.id);
     const selectedanchor1 = document.getElementById(currentSelection);
-    selectedanchor1.setAttribute("style", "color: rgb(75, 116, 230);");
+    selectedanchor1.setAttribute("style", "color: rgb(76 81 191)");
     const eles = document.getElementsByClassName(currentSelection);
     for (let i = 0; i < eles.length; i++) {
       eles[i].classList.replace("w3-show", "w3-hide");
