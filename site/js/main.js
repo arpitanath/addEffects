@@ -292,6 +292,12 @@ function loadAudio() {
   document
     .getElementById("upload-audio")
     .classList.replace("w3-show", "w3-hide");
+  document
+    .getElementById("effects-section")
+    .classList.replace("w3-hide", "w3-show");
+  document
+    .getElementById("menu-parent")
+    .classList.replace("w3-hide", "w3-show");
   var acoustic = new Pz.Sound(uploadedAudio);
 
   //   var timba = new Pz.Sound(
@@ -993,7 +999,10 @@ for (const box of anchors) {
     }
     currentSelection = event.target.id;
     const selectedanchor2 = document.getElementById(currentSelection);
-    selectedanchor2.setAttribute("style", "color: red;");
+    selectedanchor2.setAttribute(
+      "style",
+      "color: white;background-color:rgb(76 81 191)"
+    );
     const eles2 = document.getElementsByClassName(currentSelection);
     for (let i = 0; i < eles2.length; i++) {
       eles2[i].classList.replace("w3-hide", "w3-show");
